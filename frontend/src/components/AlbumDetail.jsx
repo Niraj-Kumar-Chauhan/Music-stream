@@ -13,7 +13,7 @@ function AlbumDetail() {
       try {
         setLoading(true);
         const result = await axios.get(
-          `http://localhost:3000/api/music/albums/${id}`
+          `https://music-stream-ub1v.onrender.com/api/music/albums/${id}`
         );
         setAlbum(result.data.album);
       } catch (err) {
