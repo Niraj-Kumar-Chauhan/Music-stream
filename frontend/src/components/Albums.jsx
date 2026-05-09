@@ -10,6 +10,7 @@ function Albums() {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true)
         const result = await axios.get(
           "https://music-stream-ub1v.onrender.com/api/music/albums"
         );
