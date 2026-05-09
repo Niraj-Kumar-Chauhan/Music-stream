@@ -27,7 +27,7 @@ function Signup() {
     console.log('in signup')
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://music-stream-ub1v.onrender.com/api/auth/register",
         userData,
         {
           withCredentials: true

@@ -15,7 +15,7 @@ function Login() {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/login", userData, { withCredentials: true });
+      const res = await axios.post("https://music-stream-ub1v.onrender.com/api/auth/login", userData, { withCredentials: true });
       localStorage.setItem("user", JSON.stringify(res.data.user));
       setTimeout(() => {
         navigate("/");

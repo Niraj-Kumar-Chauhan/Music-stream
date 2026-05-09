@@ -11,7 +11,7 @@ function Albums() {
     const fetchData = async () => {
       try {
         const result = await axios.get(
-          "http://localhost:3000/api/music/albums"
+          "https://music-stream-ub1v.onrender.com/api/music/albums"
         );
 
         setAlbums(result.data.albums);

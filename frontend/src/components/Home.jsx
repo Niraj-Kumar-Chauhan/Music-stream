@@ -10,7 +10,7 @@ function Home() {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:3000/api/auth/logout");
+      await axios.post("https://music-stream-ub1v.onrender.com/api/auth/logout");
       localStorage.removeItem("user");
       navigate("/login");
     } catch (err) {

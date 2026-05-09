@@ -8,7 +8,7 @@ function Musics({ isCheckbox = false, onSelect }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const result = await axios.get("http://localhost:3000/api/music");
+        const result = await axios.get("https://music-stream-ub1v.onrender.com/api/music");
         setSongs(result.data.musics);
       } catch (err) {
         setError("Failed to load music");

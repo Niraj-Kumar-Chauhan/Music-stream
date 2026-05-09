@@ -29,7 +29,7 @@ function CreateAlbum() {
 
     try {
       const result = await axios.post(
-        "http://localhost:3000/api/music/album",
+        "https://music-stream-ub1v.onrender.com/api/music/album",
         {
           title: albumName,
           musics: selectedSongs,

@@ -16,7 +16,7 @@ function CreateMusic() {
 
     try {
       setLoading(true);
-      await axios.post("http://localhost:3000/api/music/upload", formData, { withCredentials: true });
+      await axios.post("https://music-stream-ub1v.onrender.com/api/music/upload", formData, { withCredentials: true });
       navigate("/");
     } catch (err) {
       alert("Upload failed!");

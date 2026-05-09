@@ -8,7 +8,7 @@ function ProtectedRoute({ children, role }) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/auth/me", {
+      .get("https://music-stream-ub1v.onrender.com/api/auth/me", {
         withCredentials: true,
       })
       .then((res) => {
