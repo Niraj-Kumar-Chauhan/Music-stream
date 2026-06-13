@@ -28,9 +28,9 @@ function AlbumDetail() {
   if (error) return <p className="p-4 text-red-400">{error}</p>;
 
   const artistNames = [
-    ...new Set(album.musics.map((m) => m.artist.username)),
+    ...new Set(album.musics.map((m) => m.artist)),
   ];
-
+  console.log("Album = ", album)
   return (
     <div className="p-4 sm:p-6 text-white max-w-5xl mx-auto">
 
@@ -65,7 +65,7 @@ function AlbumDetail() {
                 {index + 1}. {music.title}
               </p>
               <p className="text-xs sm:text-sm text-gray-400 truncate">
-                {music.artist.username}
+                {music.artist}
               </p>
             </div>
 
